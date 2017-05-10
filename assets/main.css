@@ -1,0 +1,722 @@
+﻿@font-face {
+	font-family: 'robotolight';
+	src: url('font/roboto-light-webfont.eot');
+	src: url('font/roboto-light-webfont.eot?#iefix') format('embedded-opentype'),
+	url('font/roboto-light-webfont.svg#robotolight') format('svg'),
+	url('font/roboto-light-webfont.woff') format('woff'),
+	url('font/roboto-light-webfont.ttf') format('truetype');
+	font-weight:normal;
+	font-style:normal;
+	font-variant:normal;
+}
+
+article, nav, footer, section, figure, figcaption, address { display: block; }
+* { font-style: normal; margin: 0; padding: 0; border-collapse: collapse; font-family: Arial, Helvetica, Tahoma, sans-serif; }
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, address, code, em, img, ins, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+html { background: #e4e4e4 url('images/bg.png') repeat-x; }
+body { font-size: .75em; line-height: 1em; margin: 0 auto; color: #434242; }
+table { border-collapse: collapse; border-spacing: 0; }
+input, button { margin: 0; padding: 0; outline: none; }
+ul { list-style: none; }
+h1, h2 { font-size: 36px; padding-bottom: 0.8em; color: #e60b19; }
+h3 { color: #000; font-size: 24px; padding-bottom: 0.5em; }
+a { color: #fff; text-decoration: none; outline: none; }
+a:hover { color: #fff; }
+article p { padding-bottom: 1em; font: 16px Arial Regular, Helvetica, Tahoma, sans-serif; }
+
+h1, h2, h3, nav[role=navigation] > ul > li a, .logo figure figcaption, .block > div:first-child > p, .block > figure > figcaption:first-child, .block > figure figure figcaption {
+	font-family: 'robotolight', Arial, Helvetica, Tahoma, sans-serif;
+	 
+}
+
+h1, h2, h3, .logo figure figcaption, .block > figure > figcaption:first-child, .block > figure figure figcaption {
+	line-height: 30px;
+}
+
+#wrap {
+	position: relative;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fff;
+}
+
+#wrap, .fixed > div, footer[role=contentinfo] {
+	max-width: 996px;
+	min-width: 732px;
+	margin: auto;
+}
+
+/*fixed*/
+.fixed {
+	background: #000;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	overflow: hidden;
+	height: 40px; 
+	float: left;
+	left: 0;
+}
+
+.fixed > div {
+	margin: 5px auto;
+}
+
+.fixed > div > a > img {
+	float: right;
+	margin-right: 5px;
+}
+
+.fixed > div > a + ul {
+	margin-left: 5px;
+}
+
+.fixed > div > a + ul > li {
+	float: left;
+	position: relative;
+	height: 28px;
+}
+
+.fixed > div > a + ul > li:first-child a {
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 13px;
+	-khtml-border-radius: 8px;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 100;
+	background: #d42016;
+	border-left: 29px solid #f4f4f4;
+	display: block;
+	height: 27px;
+	line-height: 25px;
+	padding: 0 15px;
+}
+
+.fixed > div > a + ul > li a {
+	text-decoration: none;
+}
+
+.fixed > div > a + ul > li a:hover {
+	text-decoration: underline;
+}
+
+.fixed > div > a + ul > li:first-child:before {
+	content: url('images/login.gif');
+	position: absolute;
+	left: 11px;
+	top: 7px;
+}
+
+.fixed > div > a + ul > li + li {
+	margin-top: 9px;
+	margin-left: 29px;
+}
+/*fixed*/
+
+.logo {
+	width: 100%;
+	background: #1e1e1e url('images/header.jpg') repeat-x;
+	height: 179px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.logo figure {
+    margin: auto;
+	
+    width: 376px;
+    position: relative;
+    top: 46px;
+    display: block;
+    height: 100%;
+}
+
+.logo:after {
+
+}
+
+.logo figure img {
+    float: left;
+
+}
+
+.logo figure figcaption {
+    color: #fff;
+    font-size: 40px;
+    line-height: inherit;
+    position: absolute;
+    top: 25px;
+    padding: 10px;
+    left: 112px;
+}
+
+div[role=banner] > div:first-child:after {
+	content: url('images/header_sw.png');
+	height: 28px;
+	display: block;
+}
+
+/*menu*/
+nav[role=navigation] {
+	background: #dadada;
+	margin: 0 20px;
+	height: 60px;
+}
+
+nav[role=navigation] > ul > li {
+	float: left;
+}
+
+nav[role=navigation] > ul > li a {
+    display: block;
+    padding: 24px 28px 24px 28px;
+    
+font-size: 24px;
+	color: #242424;
+	text-decoration: underline;
+}
+
+nav[role=navigation] > ul > li a:hover {
+	text-decoration: underline;
+	color: #e60b19;
+}
+
+nav[role=navigation] ul:first-child a + ul {
+	visibility: hidden;
+	position: absolute;
+	z-index: 3;
+}
+
+nav[role=navigation] ul li:hover > ul {
+	visibility: visible;
+}
+
+nav[role=navigation] ul > li:hover > a + ul a {
+	margin-top: 10px;
+	background: #e60b19;
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+}
+
+nav[role=navigation] ul > li:hover > a + ul > li > a:hover {
+	background: #6d6d6d;
+	color: #fff;
+	text-shadow: none;
+	text-decoration: underline;
+}
+
+nav[role=navigation] ul > .active > a {
+	background: #e60b19;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav[role=navigation] ul > li > a + ul li {
+	position: relative;
+	display: table;
+}
+
+nav[role=navigation] ul > li > a + ul > li > a:before {
+	background: url('images/sprite.png') 0 0;
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 60px;
+	display: block;
+	left: -20px;
+	top: 0;
+}
+
+nav[role=navigation] ul > li > a + ul > li > a:after {
+	background: url('images/sprite.png') -20px 0;
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 60px;
+	display: block;
+	right: -20px;
+	top: 0;
+}
+
+nav[role=navigation] ul > .active > a + ul > .active  > a:after {
+	background: url('images/sprite.png') -40px 0;
+	content: " ";
+	position: absolute;
+	width: 20px;
+	height: 60px;
+	display: block;
+	right: -18px;
+	top: 10px;
+}
+
+nav[role=navigation] ul > .active > a + ul > .active  > a, nav[role=navigation] ul > .active > a + ul > .active  > a:hover {
+	background: #303030;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav[role=navigation] ul > .active > a:hover {
+	color: #fff;
+}
+/*menu*/
+
+form[role=search] {
+	position: absolute;
+	right: 40px;
+	top: 280px;
+	z-index: 1;
+}
+
+/*
+form[role=search]:before {
+	background: #fff url('images/sprite.png') 0 -61px;
+	content: " ";
+	position: absolute;
+	width: 36px;
+	height: 21px;
+	display: block;
+	left: 1px;
+	top: 8px;
+	z-index: 1;
+}
+*/
+
+form[role=search] label > input[name=story] {
+	background: #fff url('images/search.gif') no-repeat 9px center;
+	border: 1px solid #bdbdbd;
+	padding: 9px 5px 9px 45px;	
+	font-size: 12px;
+	width: 130px;
+}
+
+div[role=main] {
+	float: left;   
+	width: 100%;
+	margin: 30px -452px -40px 20px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding-bottom: 55px;
+}
+
+div[role=main] > article {
+	width: 100%;
+}
+
+div[role=complementary] {
+	width: 412px;
+	float: right;
+	margin-right: 20px;
+	margin: 30px 20px 60px 0;
+}
+
+.block {
+	position: relative;
+}
+
+.block #iphone {
+	background: url('images/iphone.png');
+	width: 412px;
+	height: 806px;
+}
+
+.block #iphone + div {
+	position: absolute;
+	top: 119px;
+	z-index: 1;
+	left: 39px;
+}
+
+.block #iphone + div > iframe {
+	width: 324px;
+	height: 617px;
+}
+
+.block > div:first-child {
+    margin: auto;
+
+    display: block;
+    position: relative;
+    width: 375px;
+    height: 52px;
+}
+
+.block > div:first-child > p {
+	padding: 20px 42px;
+	font-size: 24px;
+	text-align: center;
+	background: #e60b19;
+	margin: 1px auto;
+	display: block;
+	color: #fff;
+	float: left;
+}
+
+.block > div:first-child > p:before {
+	background: url('images/sprite.png') -48px -60px;
+	content: " ";
+	position: absolute;
+	width: 35px;
+	height: 18px;
+	z-index: 2;
+	display: block;
+	margin: auto;
+	text-align: center;
+	left: 50%;
+	margin-left: -17.5px;
+	top: 52px;
+}
+
+.block {
+	margin-bottom: 30px;
+}
+
+.block > figure > figcaption:first-child {
+	font-size: 36px;
+	color: #e60b19;
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.block > figure figure {
+	float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.block > figure figure + figure {
+	float: right;
+}
+
+.block > figure figure img {
+	border: 6px solid #e4e4e4;
+}
+
+.block > figure figure figcaption {
+	font-size: 24px;
+	text-align: center;
+	top: -200px;
+	margin: auto;
+	position: relative;
+}
+
+/*carusel*/
+#carusel { height: 90px; position: relative; margin: auto; min-width: 900px; max-width: 1500px; padding-right: 65px; margin-top: -125px; }
+#carusel ul { position: relative; left: -285px; width: 9999px; }
+#carusel ul li { float: left; width: 123px; padding-left: 5px; margin: 0 6px; }
+#carusel ul li img { border: 2px solid #fff; -moz-box-shadow: 1px 2px 10px #2B2B2B; -webkit-box-shadow: 1px 2px 10px #2B2B2B; box-shadow: 1px 2px 10px #2B2B2B; }
+#carusel div:first-child { width: 408px; overflow: hidden; float: right; }
+#carusel ul li p { color: #fff; text-shadow: 1px 1px 1px #000; width: 120px; line-height: 15px; padding-top: 6px; }
+
+#cleft { position: absolute; background: url('../images/carusel.png') no-repeat; width: 28px; height: 100px; margin-left: -22px; cursor: pointer; }
+#cleft:hover { background-position: 0 -100px; }
+#cright { position: absolute; background: url('../images/carusel.png') -35px 0; width: 28px; height: 100px; cursor: pointer; margin-left: 408px; }
+#cright:hover { background-position: -35px -100px; }
+/*carusel*/
+
+div[role=main] > article > p {
+	max-width: 442px;
+	min-width: 150px;
+	margin-bottom: 35px;
+	margin-right: 450px;
+}
+
+div[role=main] > article + article  > p {
+	width: 180px;
+	float: left;
+}
+
+div[role=main] > article + article > hgroup {
+	position: relative;
+	display: table;
+}
+
+div[role=main] > article + article > hgroup > h2:after {
+	background: url('images/sprite.png') 0 -140px;
+	content: " ";
+	position: absolute;
+	width: 84px;
+	height: 40px;
+	display: block;
+	right: -23px;
+	top: -5px;
+}
+
+div[role=main] > article + article + article > hgroup > h2:after {
+	background: none;
+}
+
+div[role=main] > article > div > p + ul {
+	float: left;
+	position: relative;
+	top: -40px;
+	width: 30%;
+}
+
+div[role=main] > article > div > p {
+    float: left;
+    width: 35%;
+    padding-right: 25%;
+}
+
+div[role=main] > article h1, div[role=main] > article h2, div[role=main] > article h3 {
+}
+
+div[role=main] > article > div h1, div[role=main] > article > div h2, div[role=main] > article > div h3 {
+	margin-right: 0;
+}
+
+div[role=main] > article > div {
+    margin-right: 465px;
+}
+
+.vd_left {
+	float: left;
+	width: 180px;
+}
+
+.vd_right {
+	position: relative;
+	float: right;
+	top: -40px;
+}
+
+.vd_right > ul > li {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.vd_right > ul > li > p {
+	font-size: 13px;
+	display: block;
+	background: url('images/sprite.png') 0 -181px no-repeat;
+	color: #fff;
+	text-indent: 5px;
+	line-height: 22px;
+	height: 24px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	width: 52px;
+	text-shadow: 0 -1px #B60000;
+}
+
+.clear {
+	clear: both;
+}
+
+footer[role=contentinfo]{
+	background: #313131;
+	margin-bottom: 16px;
+	overflow: hidden
+}
+
+footer[role=contentinfo] > div > div:first-child, footer[role=contentinfo] > div > div:first-child + div {
+	padding: 3% 1.5%;
+	float: left;
+}
+
+footer[role=contentinfo] > div > div:first-child {
+	width: 54%;
+	margin-left: -1px;
+}
+
+footer[role=contentinfo] > div > div:first-child + div {
+	width: 40%;
+	margin-right: -1px;
+}
+
+footer[role=contentinfo] > div > div:first-child {
+	display: table-cell; 
+	position: relative;
+	margin-top: 1.5%;
+}
+
+footer[role=contentinfo] > div > div:first-child + div {
+	display: table-cell;
+	margin-top: 1.5%;  
+}
+
+footer[role=contentinfo] > div > div:first-child > ul {
+    display: table;
+    width: 100%;
+	position: relative;
+}
+
+footer[role=contentinfo] > div > div:first-child:after, .ft_left:after {
+	content: '';
+    display: block;
+	width: 2px;
+	height: 100%;
+	background: url('images/f_b.gif') repeat-y;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.ft_left:after {
+	content: '';
+    display: block;
+	width: 2px;
+	height: 100%;
+	background: url('images/f_b.gif') repeat-y;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul > li {
+	float: left;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul li > span:first-child {
+position: relative;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 8px;
+	display: block;
+	border-bottom: 1px solid #000;
+	text-transform: uppercase;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul > li, footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul + ul > li {
+	width: auto;
+	padding-bottom: 10px;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul > li > span {
+    padding: 0;
+    border-bottom: none;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul, footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul + ul {
+    float: left;
+    padding-top: 18px;
+    border-top: 1px solid #474747;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul > li:first-child {
+	width: 50%;
+}
+	
+footer[role=contentinfo] > div > div:first-child > ul > li:first-child > span + ul, footer[role=contentinfo] > div > div:first-child > ul > li:first-child > span + ul + ul {
+	width: 50%;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul > li:first-child + li, footer[role=contentinfo] > div > div:first-child > ul > li:first-child + li + li {
+	width: 25%;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul > li:first-child + li > span + ul,
+footer[role=contentinfo] > div > div:first-child > ul > li:first-child + li + li > span + ul {
+	width: 100%;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul > li a:hover {
+	text-decoration: underline;
+}
+
+footer[role=contentinfo] > div:first-child {
+	position: relative;
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul  > li span,
+footer[role=contentinfo] > div > div:first-child > ul li > span:first-child + ul  > li span {
+	border: none;
+}
+
+.ft_left {
+	float: left;
+	width: 54%;
+	padding: 3% 1.5%;
+	margin-left: -1px;
+	position: relative;
+}
+
+.ft_left ul li span {
+	position: relative;
+	font-weight: bold;
+	font-size: 14px;
+	color: #fff;
+	padding-bottom: 8px;
+	display: block;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 20px;
+}
+
+.ft_left ul li {
+	float: left;
+}
+
+.lipp {
+	width: 100%;
+}
+
+.ft_left > ul > li > span + ul {
+	position: relative;
+	top: -8px;
+}
+
+.ft_left > ul > li > span + ul li {
+	margin-right: 10px;
+}
+
+.ft_right {
+	float: left;
+	width: 40%;
+	padding: 3% 1.5%;
+	margin-right: -1px;
+}
+
+/*
+footer[role=contentinfo] > div > div:first-child, footer[role=contentinfo] > div > div:first-child + div {                                                          
+  position: relative;                                                            
+  float: left;                                                                 
+  left: -50%;                                                                    
+}                                                                                
+                                                                             
+footer[role=contentinfo] > div > div:first-child {                                                                    
+  width: 50%;                                                                    
+}                                                                                
+                                                                                 
+footer[role=contentinfo], footer[role=contentinfo] > div:first-child {                                                                
+  position:relative;                                                                                                                               
+  width: 100%;                                                                   
+  background-color: #9988ff;                                                     
+}                                                                                
+                                                                   
+footer[role=contentinfo] {                                                                        
+  overflow: hidden;                                                               
+}                                                                                
+                                                                                 
+footer[role=contentinfo] > div:first-child {                                                                        
+  left: 50%;                                                                     
+  background-color: #99ff99;                                                     
+}
+*/
+
+@media screen and (max-width: 48em) {
+	.vd_left {
+		width: 180px;
+	}
+
+	.vd_right {
+		position: relative;
+		float: left;
+		top: 0;
+	}
+	
+	footer[role=contentinfo] > div > div:first-child > ul li > span:first-child {
+		font-size: 12px;
+	}
+}
